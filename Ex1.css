@@ -1,0 +1,212 @@
+:root {
+    --purple: #7E22A4;
+    --light-purple: #D4A2E9;
+    --yellow: #FFDE00;
+    --gold: #8D872D;
+}
+
+/* General Styles */
+body {
+    font-family: 'TT Chocolates Trial', sans-serif;
+    overflow-x: hidden;
+}
+
+.bg-purple {
+    background-color: var(--purple);
+}
+
+.bg-light-purple {
+    background-color: var(--light-purple);
+}
+
+.text-warning {
+    color: var(--yellow);
+}
+
+.btn-warning {
+    background-color: var(--gold);
+    border-color: var(--gold);
+    color: white;
+}
+
+.btn-warning:hover {
+    filter: brightness(110%);
+    color: white;
+}
+
+/* Top Navigation */
+.top-nav {
+    position: relative;
+    z-index: 1000;
+}
+
+.search-container {
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.search-input {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+}
+
+.refresh-icon {
+    right: 10px;
+}
+
+/* Main Navigation */
+.navbar {
+    min-height: 60px;
+}
+
+.brand-logo {
+    width: 100px;
+    height: auto;
+    transform: rotate(-15deg);
+    margin-top: -20px;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 700;
+    color: black;
+    padding: 0.3rem 0.8rem;
+    font-size: 0.9rem;
+}
+
+.navbar-nav .nav-link:hover {
+    color: var(--gold);
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    min-height: 100vh;
+    padding: 2rem 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.hero-title {
+    font-family: 'MT Qurista Groove', serif;
+    color: var(--yellow);
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.hero-subtitle {
+    color: #AEA635;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+    font-size: 1.2rem;
+}
+
+.cupcake-img {
+    width: 250px;
+    height: auto;
+}
+
+.sample-cake {
+    width: 520px;
+    height: 520px;
+    object-fit: cover;
+    margin: 1rem;
+}
+
+
+.dots {
+    color: white;
+}
+
+/* Popular Cakes */
+.section-subtitle {
+    font-family: 'MT Qurista Groove', serif;
+    color: white;
+    font-size: 1rem;
+}
+
+.section-title {
+    font-family: 'TT Chocolates Trial', sans-serif;
+    color: white;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+}
+
+.cake-img {
+    border: 3px dotted white;
+    border-radius: 15px;
+    max-width: 160px;
+    height: auto;
+}
+
+.cake-name {
+    font-family: 'MT Qurista Groove', serif;
+    color: #514D1A;
+    font-size: 1.2rem;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 992px) {
+    .hero-title {
+        font-size: 1.8rem;
+    }
+    
+    .sample-cake {
+        width: 250px;
+        height: 250px;
+        margin-left: 0;
+    }
+    
+    .cupcake-img {
+        left: -30px;
+        width: 150px;
+    }
+}
+
+@media (max-width: 768px) {
+    .brand-logo {
+        width: 80px;
+        margin-top: -15px;
+    }
+    
+    .hero-title {
+        font-size: 1.6rem;
+    }
+    
+    .sample-cake {
+        width: 200px;
+        height: 200px;
+    }
+    
+    .cupcake-img {
+        width: 120px;
+        left: -20px;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-title {
+        font-size: 1.4rem;
+    }
+    
+    .hero-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .sample-cake {
+        width: 180px;
+        height: 180px;
+    }
+    
+    .cupcake-img {
+        width: 100px;
+        left: -10px;
+    }
+    
+    .search-container {
+        width: 100%;
+    }
+}
